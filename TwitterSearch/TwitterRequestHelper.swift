@@ -11,9 +11,14 @@ import UIKit
 class TwitterRequestHelper {
   static private let baseURLStringAuth = "https://api.twitter.com/oauth2/token"
   static private let baseURLStringSearch = "https://api.twitter.com/1.1/search/tweets.json"
+  //Consumer Key and Consumer Key Secret are generated when you create a Twitter App online
+  //Use this to read more https://developer.twitter.com/en/docs/basics/apps/overview
   static private let consumerKey = "YOUR CONSUMER KEY"
   static private let consumerKeySecret = "YOUR CONSUMER KEY SECRET"
+    
   static private let authQueryParams = ["grant_type" : "client_credentials"]
+
+//These params will be overwritten by any additional params sent while making a search result API call
   static private let searchQueryParams = ["lang" : "en",
                                           "result_type" : "recent",
                                           "count" : "30"]

@@ -23,6 +23,7 @@ class Tweet {
     var tweeter       : Tweeter?
     var imageState    : ImageState = .unknown
     let cacheIndexingKey : String = UUID().uuidString
+    //A measure of popularity of that tweet from the response
     var popularityMeasure : Double {
         get {
             var measure :Double = 0.0

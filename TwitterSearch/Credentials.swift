@@ -9,6 +9,8 @@
 import Foundation
 
 
+//This will look if you have already generated an access token and saved it , otherwise it will send a call to generate one
+
 class Credentials {
     private var accessToken : String?
     private let tokenKey  = "tokenKey"
